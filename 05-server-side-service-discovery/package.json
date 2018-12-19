@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Provide an example",
+  "scripts": {
+    "start": "npm-run-all --parallel service1 api_gateway",
+    "service1": "node service1",
+    "api_gateway": "node api_gateway",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Somkiat.cc",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-http-proxy": "1.0.3",
+    "npm-run-all": "4.0.2",
+    "request": "^2.88.0",
+    "request-promise-native": "1.0.4",
+    "xml": "1.0.1",
+    "eureka-js-client": "4.4.2"
+  }
+}
