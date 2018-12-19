@@ -1,5 +1,6 @@
-# microservice-workshop
+# Microservice workshop with NodeJS
 
 * Starter
 * Communication service-to-service
-* Working with API gateway
+* API gateway
+* Service registry and discovery
