@@ -5,3 +5,4 @@
 3. API gateway
 4. Service registry and discovery
 5. Server-side discovery
+6. Health check API
