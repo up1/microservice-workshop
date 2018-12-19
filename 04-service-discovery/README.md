@@ -18,6 +18,6 @@ $mvnw spring-boot:run
 Open url=http://localhost:8761/ in browser
 
 ### Working with services
-
+1.  `cd eureka-client-nodejs`
 1. `npm install` and `npm start`
 2. Call http://localhost:3002
