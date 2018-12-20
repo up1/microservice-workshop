@@ -1,0 +1,22 @@
+{
+  "name": "demo",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Provide an example",
+  "scripts": {
+    "start": "npm-run-all --parallel service1 service2",
+    "service1": "node service1",
+    "service2": "node service2",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Somkiat.cc",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-http-proxy": "1.0.3",
+    "npm-run-all": "4.0.2",
+    "request": "^2.88.0",
+    "request-promise-native": "1.0.4",
+    "jaeger-client": "3.5.3",
+    "opentracing": "0.14.1"
+  }
+}
