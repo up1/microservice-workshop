@@ -7,4 +7,5 @@
 5. Server-side discovery (Eureka)
 6. Health check API
 7. Circuit breaker
+8. Tracing with Jaeger and Opentracing
 9. Monitoring (Preometheus and Grafana)
