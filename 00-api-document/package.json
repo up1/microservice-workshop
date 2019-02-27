@@ -13,6 +13,7 @@
     "express": "4.16.4",
     "lodash": "4.17.11",
     "swagger-express-mw": "0.7.0",
-    "swagger-ui-dist": "3.0.14"
+    "swagger-ui-dist": "3.0.14",
+    "deep-extend": ">=0.5.1"
   }
 }
