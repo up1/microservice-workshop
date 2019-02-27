@@ -11,6 +11,5 @@
 8. Tracing with Jaeger and Opentracing
 9. Monitoring (Preometheus and Grafana)
 10. Logging
-11. Event sourcing
-12. CQRS (Command Query Responsibility Segregation)
+11. CQRS (Command Query Responsibility Segregation)
 
