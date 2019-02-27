@@ -1,6 +1,7 @@
 # Microservice workshop with NodeJS
 
 1. Starter
+   * API Document
 2. Communication service-to-service
 3. API gateway
 4. Service registry and discovery (Eureka)
@@ -9,3 +10,7 @@
 7. Circuit breaker
 8. Tracing with Jaeger and Opentracing
 9. Monitoring (Preometheus and Grafana)
+10. Logging
+11. Event sourcing
+12. CQRS (Command Query Responsibility Segregation)
+
