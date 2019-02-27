@@ -15,7 +15,7 @@ Create monitoring system of service
 ### Prometheus
 ```
 // For windows
-$docker run -p 9090:9090 -v "$pwd/prometheus-data:/prometheus-data prom/prometheus" --config.file=/prometheus-data/prometheus.yml
+$docker run -p 9090:9090 -v "$pwd/prometheus-data:/prometheus-data" prom/prometheus --config.file=/prometheus-data/prometheus.yml
 
 // For Unix/Mac
 $docker run -p 9090:9090 -v $(pwd)/prometheus-data:/prometheus-data prom/prometheus --config.file=/prometheus-data/prometheus.yml
