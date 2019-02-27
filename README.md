@@ -1,7 +1,7 @@
 # Microservice workshop with NodeJS
 
+0. API Document
 1. Starter
-   * API Document
 2. Communication service-to-service
 3. API gateway
 4. Service registry and discovery (Eureka)
