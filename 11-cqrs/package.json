@@ -1,0 +1,17 @@
+{
+  "name": "example-cqrs",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Working with CQRS",
+  "main": "client.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node client.js"
+  },
+  "author": "Somkiat.cc",
+  "dependencies": {
+    "lodash": "4.17.11",
+    "deep-extend": ">=0.5.1",
+    "tortoise": "1.0.1"
+  }
+}
