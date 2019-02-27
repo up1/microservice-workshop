@@ -1,0 +1,20 @@
+{
+  "name": "example-logging",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Logging message format",
+  "main": "service.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node service.js"
+  },
+  "author": "Somkiat.cc",
+  "dependencies": {
+    "express": "4.16.4",
+    "request": "^2.88.0",
+    "request-promise-native": "1.0.4",
+    "uuid": "3.0.1",
+    "winston": "2.3.1",
+    "winston-gke": "1.0.2"
+  }
+}
