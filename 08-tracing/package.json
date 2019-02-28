@@ -4,9 +4,10 @@
   "version": "1.0.0",
   "description": "Provide an example",
   "scripts": {
-    "start": "npm-run-all --parallel service1 service2",
+    "start": "npm-run-all --parallel service1 service2 service3",
     "service1": "node service1",
     "service2": "node service2",
+    "service3": "node service3",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Somkiat.cc",

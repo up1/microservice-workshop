@@ -19,7 +19,6 @@ const tracer = new jaeger.Tracer('service 1', reporter, sampler)
 
 app.get('/', (req, res) => {
   const span = tracer.startSpan('http_server')
-
   span.setTag(opentracing.Tags.HTTP_URL, `${req.protocol}://${req.hostname}${req.originalUrl}`)
   span.setTag(opentracing.Tags.HTTP_METHOD, req.method)
   span.setTag('request_path', req.route.path)
@@ -45,7 +44,7 @@ app.get('/', (req, res) => {
       span.setTag(opentracing.Tags.ERROR, true)
 
       res.statusCode = 500
-      res.json({ status: 'upstream error' })
+      res.json({ status: 'Error in service 1' })
     })
     .then(() => span.finish())
 })

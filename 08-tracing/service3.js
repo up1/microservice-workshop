@@ -3,19 +3,18 @@
 const express = require('express')
 const opentracing = require('opentracing')
 const jaeger = require('jaeger-client')
-const request = require('request-promise-native')
 
 // Using UDP
 const UDPSender = require('jaeger-client/dist/src/reporters/udp_sender').default
 
 const app = express()
-const port = process.env.PORT || 3003
+const port = process.env.PORT || 3004
 
 // Tracer
 const udpSender = new UDPSender()
 const reporter = new jaeger.RemoteReporter(udpSender)
 const sampler = new jaeger.RateLimitingSampler(1)
-const tracer = new jaeger.Tracer('service 2', reporter, sampler)
+const tracer = new jaeger.Tracer('service 3', reporter, sampler)
 
 app.get('/site/:site', (req, res) => {
   const spanContext = jaeger.SpanContext.fromString(req.headers['trace-span-context'])
@@ -27,30 +26,14 @@ app.get('/site/:site', (req, res) => {
   span.setTag('request_path', req.route.path)
   span.setTag('request_id', req.headers['x-request-id'])
 
-  const requestOptions = {
-    headers: { 'trace-span-context': req.headers['trace-span-context'] },
-    json: true
-  }
-
-  Promise.all([
-    request(Object.assign({ uri: 'http://localhost:3004/site/' + req.params.site }, requestOptions))
-  ])
-    .then((sites) => {
-      span.setTag(opentracing.Tags.HTTP_STATUS_CODE, 200)
-      res.json({ sites })
-    })
-    .catch((err) => {
-      console.error(err)
-
-      span.setTag(opentracing.Tags.HTTP_STATUS_CODE, 500)
-      span.setTag(opentracing.Tags.ERROR, true)
-
-      res.statusCode = 500
-      res.json({ status: 'Error in service 2' })
-    })
-    .then(() => span.finish())
+  res.json({
+    name: req.params.site,
+    url: `https://${req.params.site}.com`
+  })
+  span.setTag(opentracing.Tags.HTTP_STATUS_CODE, 200)
+  span.finish()
 })
 
 app.listen(port, () => {
-  console.log(`Service 2 listening on port ${port}!`)
+  console.log(`Service 3 listening on port ${port}!`)
 })
