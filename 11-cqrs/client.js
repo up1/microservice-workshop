@@ -23,7 +23,7 @@ userService
     setTimeout(() => {
       log('Account in account service database', accountService.getAccountById(userId))
       log('User in user service database', userService.getUserById(userId))
-      log('User in Reporting Database', reportService.getUserById(userId))
+      log('User in reporting database', reportService.getUserById(userId))
 
       process.exit()
     }, 1000)
