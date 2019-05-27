@@ -33,7 +33,7 @@ function protectedValueableResource (shouldFail) {
           reject(err)
         })
     }, () => {
-      reject(new Error('Circuit breaker is active'))
+      reject(new Error('Circuit breaker is opened'))
     })
   })
 }
