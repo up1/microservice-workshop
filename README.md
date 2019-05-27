@@ -15,4 +15,4 @@
 9. Monitoring (Preometheus and Grafana)
 10. Logging
 11. CQRS (Command Query Responsibility Segregation)
-
+12. Event sourcing
