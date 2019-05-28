@@ -1,9 +1,10 @@
+const config = require('./config')
 const kafka = require("kafka-node")
-const client = new kafka.KafkaClient("localhost:2181")
+const client = new kafka.KafkaClient(config.kafka_server)
 
 const Consumer = kafka.Consumer
 const consumer = new Consumer(client, [{
-  topic: 'hello',
+  topic: config.kafka_topic,
   offset: 0
 }], {
   autoCommit: true
