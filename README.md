@@ -16,3 +16,4 @@
 10. Logging
 11. CQRS (Command Query Responsibility Segregation)
 12. Event sourcing
+13. Event sourcing with Kafka
