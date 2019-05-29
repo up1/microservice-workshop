@@ -51,7 +51,7 @@ Step 5 :: Create new service in API Gateway
 $curl -i -X POST \
   --url http://localhost:8001/services/ \
   --data 'name=service-2' \
-  --data 'url=http://192.168.1.103:9002'
+  --data 'url=http://172.16.6.2:3002'
 ```
 
 Step 6 :: Create routes for service
@@ -79,7 +79,7 @@ curl -X GET \
 Step 8 :: Delete route and service
 
 ```
-$curl -i -X DELETE --url http://localhost:8001/routes/<route id/name>
+$curl -i -X DELETE --url http://localhost:8001/routes/<route id>
 
 $curl -i -X DELETE --url http://localhost:8001/services/<service name>
 ```
