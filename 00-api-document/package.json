@@ -11,9 +11,10 @@
   "author": "Somkiat.cc",
   "dependencies": {
     "express": "4.16.4",
-    "lodash": "4.17.11",
+    "lodash": ">=4.17.13",
     "swagger-express-mw": "0.7.0",
     "swagger-ui-dist": "3.0.14",
-    "deep-extend": ">=0.5.1"
+    "deep-extend": ">=0.5.1",
+    "js-yaml": ">=3.13.1"
   }
 }
