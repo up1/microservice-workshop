@@ -28,7 +28,7 @@ app.get('/site/:site', (req, res) => {
   span.setTag('request_id', req.headers['x-request-id'])
 
   const requestOptions = {
-    headers: { 'trace-span-context': req.headers['trace-span-context'] },
+    headers: { 'trace-span-context': span.context().toString() },
     json: true
   }
 

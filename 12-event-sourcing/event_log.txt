@@ -1,0 +1,6 @@
+{"type":"open","id":"Somkiat","balance":1000,"timestamp":1558977232370}
+{"type":"open","id":"Pui","balance":500,"timestamp":1558977232371}
+{"type":"open","id":"Bom","balance":0,"timestamp":1558977232371}
+{"type":"transfer","fromId":"Somkiat","toId":"Pui","amount":500,"timestamp":1558977232373}
+{"type":"transfer","fromId":"Somkiat","toId":"Bom","amount":500,"timestamp":1558977232373}
+{"type":"close","id":"Somkiat","balance":0,"timestamp":1558977232373}

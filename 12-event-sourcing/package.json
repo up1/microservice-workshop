@@ -1,0 +1,15 @@
+{
+  "name": "event-sourcing",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Event Sourcing",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node client"
+  },
+  "author": "Somkiat.cc",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
