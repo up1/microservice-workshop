@@ -17,6 +17,8 @@
     "request": "^2.88.0",
     "request-promise-native": "1.0.4",
     "xml": "1.0.1",
-    "eureka-js-client": "4.4.2"
+    "eureka-js-client": "4.4.2",
+    "lodash": ">=4.17.13",
+    "js-yaml": ">=3.13.1"
   }
 }
