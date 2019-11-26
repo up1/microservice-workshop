@@ -1,6 +1,10 @@
 ## Step 1 :: Start service registry (consul)
 ```
 $docker container run --rm --name=consul -p 8500:8500 consul
+
+or
+
+$consul agent -dev -client 0.0.0.0
 ```
 
 Open url=http://localhost:8500 in browser
