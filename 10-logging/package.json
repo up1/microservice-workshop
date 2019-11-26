@@ -16,6 +16,6 @@
     "request-promise-native": "1.0.4",
     "uuid": "3.0.1",
     "winston": "^3.2.1",
-    "winston-logstash-udp": "0.2.1"
+    "winston-transport-udp-logstash": "1.0.3"
   }
 }

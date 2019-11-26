@@ -6,7 +6,20 @@ const uuidV1 = require('uuid/v1')
 
 const app = express()
 const port = process.env.PORT || 3001
-const logger = require('./logger')
+
+var winston = require('winston');
+var logStashTransport = require('winston-transport-udp-logstash');
+ 
+const logger = winston.createLogger({
+  level: 'info',
+  transports: [
+    new logStashTransport({
+        host: '127.0.0.1',
+        port: 12201,
+        appName: 'service 1'
+    })
+  ]
+})
 
 function getLogMetaFromReq (req, res) {
   return {
@@ -79,5 +92,6 @@ app.use((req, res, next) => {
 })
 
 app.listen(port, () => {
+  console.log(logger);
   logger.info(`Server listening on port ${port}!`)
 })
