@@ -17,3 +17,4 @@
 11. CQRS (Command Query Responsibility Segregation)
 12. Event sourcing
 13. Event sourcing with Kafka
+14. [Scaling with Docker](https://github.com/up1/microservice-workshop/tree/master/docker-workshop/scaling-service)
