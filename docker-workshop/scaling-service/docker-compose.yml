@@ -1,0 +1,12 @@
+version: '3.7'
+
+services:
+  web:
+    image: somkiat/hello
+
+  loadbalancer:
+      image: somkiat/loadbalancer
+      build:
+        context: ./load-balance
+      ports:
+        - 8080:80

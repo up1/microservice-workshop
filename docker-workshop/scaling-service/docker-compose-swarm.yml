@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  web:
+    image: somkiat/hello
+
+  loadbalancer:
+      image: somkiat/loadbalancer
+      ports:
+        - 8080:80
