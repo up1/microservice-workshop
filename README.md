@@ -11,7 +11,7 @@
 5. Server-side discovery with API gateway (Zuul)
 6. Health check API
 7. Circuit breaker
-8. Tracing with Jaeger and Opentracing
+8. Tracing with Jaeger and Zipkin
 9. Monitoring (Preometheus and Grafana)
 10. Logging
 11. CQRS (Command Query Responsibility Segregation)
