@@ -9,7 +9,7 @@
   },
   "author": "Somkiat.cc",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.17.3",
     "circuit-breaker-js": "0.0.1"
   }
 }
