@@ -9,7 +9,7 @@
   },
   "author": "Somkiat.cc",
   "dependencies": {
-    "express": "^4.16.4",
+    "express": "^4.18.2",
     "lodash": ">=4.17.13",
     "prom-client": "9.1.0"
   }
