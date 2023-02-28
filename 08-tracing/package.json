@@ -12,7 +12,7 @@
   },
   "author": "Somkiat.cc",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "express-http-proxy": "1.0.3",
     "jaeger-client": "3.5.3",
     "npm-run-all": "4.0.2",
